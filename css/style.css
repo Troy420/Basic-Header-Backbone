@@ -69,3 +69,65 @@
     width: 90%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .inner_header a {
+    display: none;
+  }
+
+  #burger_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    float: right;
+    height: 100%;
+    width: 80px;
+  }
+
+  .circle {
+    display: flex;
+    background-color: #0d6fba;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .line {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    position: absolute;
+    border-radius: 10px;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+  }
+
+  .top {
+    top: 30%;
+  }
+
+  .middle {
+    top: 50%;
+  }
+
+  .bottom {
+    top: 70%;
+  }
+
+  .icon.close .top {
+    transform: rotate(45deg);
+    top: 48%;
+  }
+
+  .icon.close .middle {
+    opacity: 0;
+  }
+
+  .icon.close .bottom {
+    transform: rotate(-45deg);
+    top: 48%;
+  }
+}

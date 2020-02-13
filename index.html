@@ -25,7 +25,22 @@
           <a href="#"><li>Portfolio</li></a>
           <a href="#"><li>Contact</li></a>
         </ul>
+
+        <div id="burger_container">
+          <div class="circle icon">
+            <span class="line top"> </span>
+            <span class="line middle"> </span>
+            <span class="line bottom"> </span>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script>
+      $("#burger_container").click(function() {
+        $(".icon").toggleClass("close");
+      });
+    </script>
   </body>
 </html>
