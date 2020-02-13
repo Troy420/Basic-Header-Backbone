@@ -24,41 +24,47 @@
   height: 100%;
   display: table;
   float: left;
-}
-.logo_container h1 {
-  color: white;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  font-weight: 200;
-}
-.logo_container h1 span {
-  font-weight: 800;
+
+  h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+
+    span {
+      font-weight: 800;
+    }
+  }
 }
 
 .navigation {
   float: right;
   height: 100%;
+
   /* background-color: red; */
-}
-.navigation a {
-  height: 100%;
-  display: table;
-  float: left;
-  padding: 0px 20px;
-}
-.navigation a:last-child {
-  padding-right: 0;
-}
-.navigation a li {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+
+  a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    li {
+      display: table-cell;
+      vertical-align: middle;
+      height: 100%;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+    }
+  }
 }
 
 .burger {
@@ -76,6 +82,7 @@
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .navigation {
     display: none;
@@ -123,16 +130,20 @@
     top: 70%;
   }
 
-  .icon.close .top {
-    transform: rotate(45deg);
-    top: 48%;
-  }
-  .icon.close .middle {
-    opacity: 0;
-  }
-  .icon.close .bottom {
-    transform: rotate(-45deg);
-    top: 48%;
+  .icon.close {
+    .top {
+      transform: rotate(45deg);
+      top: 48%;
+    }
+
+    .middle {
+      opacity: 0;
+    }
+
+    .bottom {
+      transform: rotate(-45deg);
+      top: 48%;
+    }
   }
 
   .burger.open {
@@ -141,21 +152,24 @@
     top: 80px;
   }
 
-  .burger ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-  .burger ul a {
-    text-decoration: none;
-    color: white;
-  }
-  .burger ul a li {
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
+  .burger {
+    ul {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        li {
+          padding: 0.5rem;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
   }
 }
-
-/*# sourceMappingURL=style.css.map */

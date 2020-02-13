@@ -37,6 +37,15 @@
             <span class="line bottom"> </span>
           </div>
         </div>
+
+        <div class="burger">
+          <ul>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>About</li></a>
+            <a href=""><li>Portfolio</li></a>
+            <a href=""><li>Contact</li></a>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -45,6 +54,10 @@
     <script>
       $("#burger_container").click(function() {
         $(".icon").toggleClass("close");
+      });
+
+      $("#burger_container").click(function() {
+        $(".burger").toggleClass("open");
       });
     </script>
   </body>
